@@ -3,7 +3,7 @@ package user_mini_project;
 import java.util.Scanner;
 
 import ch2.OperConditionTest;
-import util.UserService;
+import util.User.UserService;
 
 public class MainClass {
     public static void main(String[] args) {
@@ -30,7 +30,7 @@ public class MainClass {
                 scanner.close();
                 return;
             } else {
-                System.out.println("잘못된 입력입니다. 1, 2, 3 중에서 선택해주세요.");
+                System.out.println("잘못된 입력입니다. 0, 1, 2, 3, 4, 5 중에서 선택해주세요.");
             }
         }
     }

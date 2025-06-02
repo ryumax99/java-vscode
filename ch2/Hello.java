@@ -1,6 +1,6 @@
 package ch2;
 
-import util.UserService;
+import util.User.UserService;
 
 // public : 접근지정자, 파란색으로 표기 되는 부분은 예약어
 // 변수명으로 따로 사용안됨.
