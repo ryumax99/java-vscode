@@ -2,8 +2,8 @@ package ch2;
 
 import java.util.Scanner;
 
-import util.User.UserService;
-import util.User.UserService_doc;
+import util.user.UserService;
+import util.user.UserService_doc;
 
 // 퀴즈2
         // 새로운 ScannerTest2 클래스 만들기.

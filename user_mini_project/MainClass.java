@@ -3,8 +3,8 @@ package user_mini_project;
 import java.util.Scanner;
 
 import ch2.OperConditionTest;
-import util.Random.RandomUtil;
-import util.User.UserService;
+import util.random.RandomUtil;
+import util.user.UserService;
 
 public class MainClass {
     public static void main(String[] args) {

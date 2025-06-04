@@ -1,8 +1,8 @@
-package util.User;
+package util.user;
 
 import java.util.Scanner;
 
-import util.Date.DateUtil;
+import util.date.DateUtil;
 
 public class UserService {
     public static void registerUser(Scanner scanner){

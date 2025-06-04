@@ -1,4 +1,4 @@
-package util.Random;
+package util.random;
 
 public class RandomUtil {
     // 설계 클래스
