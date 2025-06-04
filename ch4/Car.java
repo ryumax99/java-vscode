@@ -26,3 +26,5 @@ public class Car {
         System.out.println("제조사 : " + this.company);
     }
 }
+
+
