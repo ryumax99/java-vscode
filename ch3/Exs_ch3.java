@@ -4,6 +4,18 @@ import java.util.Scanner;
 
 public class Exs_ch3 {
     
+    // 0으로 나누는 예외 처리 예시
+    public static void ex3_9(){
+        int a = 10;
+        int b = 0;
+        try {
+            int result = a/b;
+            System.out.println("결과: " + result);
+
+        } catch (ArithmeticException e){
+
+        }
+    }
 
     // 기본 배열 생성, 조회, 반복문 출력, 배열 타입으로 리턴.
     public static void ex3_8() {

@@ -27,6 +27,59 @@ public class Quiz1 {
         scanner.close();
     }
     public static void quiz1_2() {
-        
+        int[][] array = new int[3][3];
+        int value = 1;
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++)
+            array[i][j] = value++;
+        }
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                System.out.print(array[i][j] + " ");
+            }
+            System.out.println(); // 행 끝나면 줄바꿈
+        }            
+    }
+    public static String quiz1_3(String[] strings) {
+        // 기본 유효성 체크
+        if (strings == null || strings.length == 0) {
+            return null; // 빈 배열 처리
+        }
+        // 상태 변수, 가장 긴 문자열을 임시로 저장.
+        // 초기값이 예시 : "apple"
+        String longest = strings[0]; // 첫 번째 문자열로 초기화
+
+        // strings 문자열을 요소로 가지는 배열을 반복하면서, 하나씩 꺼내서 비교
+        for (String str : strings) {
+            // longest : 예시 , "apple", length() : 5
+            // str : 예시 , "banana" , length() : 6
+            if (str.length() > longest.length()) {
+                longest = str; // 더 긴 문자열 발견 시 업데이트
+            }
+        }
+
+        return longest; // 가장 긴 문자열 반환
+    }
+
+    // 임의로, 크기가 5개인, 문자열의 길이는 10개이하인, 랜덤한 문자열을 생성하는 메서드
+    // 반환 타입 : 문자열 배열 ,
+    public static String[] generateRandomStrings(int size) {
+        String[] randomStrings = new String[size];
+        String characters = "abcdefghijklmnopqrstuvwxyz"; // 소문자 알파벳
+
+        for (int i = 0; i < size; i++) {
+            int length = (int) (Math.random() * 10) + 1; // 1~10 사이의 길이
+            StringBuilder sb = new StringBuilder();
+
+            for (int j = 0; j < length; j++) {
+                int index = (int) (Math.random() * characters.length());
+                sb.append(characters.charAt(index)); // 랜덤 문자 추가
+            }
+
+            randomStrings[i] = sb.toString(); // 문자열로 변환하여 배열에 저장
+        }
+
+        return randomStrings; // 생성된 문자열 배열 반환
     }
 }
+
