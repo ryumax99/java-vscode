@@ -45,6 +45,11 @@ public class Phone_Main {
         phones[4] = phone5; 
         phones[5] = phone6;
 
+        // for (int i = 0; i <phones.length; i++){
+        //     phones
+        // }
+
+
         System.out.println("=== Phone 정보 출력 ===");
         for (Phone p : phones) {
             p.showInfo();
