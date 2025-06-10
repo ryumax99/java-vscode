@@ -19,9 +19,9 @@ public class PhoneEx1_2 {
     };
 
     public void showInfo() {
-        System.out.println("제조사" + company);
-        System.out.println("제품명" + name);
-        System.out.println("가격" + price);
+        System.out.println("제조사 : " + company);
+        System.out.println("제품명 : " + name);
+        System.out.println("가격 : " + price);
     }
 
     public PhoneEx1_2() {}

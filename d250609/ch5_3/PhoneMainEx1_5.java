@@ -13,11 +13,11 @@ public class PhoneMainEx1_5 {
         // 형확인하는 연산자 이용 -> 원래의 타입을 확인하는 절차.
         if (phoneIphone instanceof IphoneEx1_4) {
             // 다운 캐스팅 : 위-> 아래 부모 클래스에서 -> 자식 클래스 타입으로 변환.
-            IphoneEx1_4 iphoneEx1_42 = (IphoneEx1_4) phoneIphone;
+            IphoneEx1_4 iphoneEx1_4_2 = (IphoneEx1_4) phoneIphone;
             System.out.println("형이 아이폰 클래스가 맞다면 여기에만 있는 기능");
             iphoneEx1_4.sellInfo();
         } else if (phoneIphone instanceof GalaxyEx1_3) {
-            GalaxyEx1_3 galaxyEx1_32 = (GalaxyEx1_3) phoneIphone;
+            GalaxyEx1_3 galaxyEx1_3_2 = (GalaxyEx1_3) phoneIphone;
             System.out.println("형이 갤럭시 클래스가 맞다면 여기에만 있는 기능");
             galaxyEx1_3.logoInfo();
         }
@@ -27,11 +27,11 @@ public class PhoneMainEx1_5 {
         // samsungPhone.logoInfo(); //현재 타입은 부모타입이라 자식타입의 매서드를 못 봄.
         if (samsungPhone instanceof IphoneEx1_4) {
             // 다운 캐스팅 : 위-> 아래 부모 클래스에서 -> 자식 클래스 타입으로 변환.
-            IphoneEx1_4 iphoneEx1_42 = (IphoneEx1_4) samsungPhone;
+            IphoneEx1_4 iphoneEx1_4_2 = (IphoneEx1_4) samsungPhone;
             System.out.println("형이 아이폰 클래스가 맞다면 여기에만 있는 기능");
             iphoneEx1_4.sellInfo();
         } else if (samsungPhone instanceof GalaxyEx1_3) {
-            GalaxyEx1_3 galaxyEx1_32 = (GalaxyEx1_3) samsungPhone;
+            GalaxyEx1_3 galaxyEx1_3_2 = (GalaxyEx1_3) samsungPhone;
             System.out.println("형이 갤럭시 클래스가 맞다면 여기에만 있는 기능");
             galaxyEx1_3.logoInfo();
         }
