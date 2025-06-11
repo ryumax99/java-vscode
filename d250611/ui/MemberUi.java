@@ -2,7 +2,9 @@ package d250611.ui;
 
 import java.util.Scanner;
 
-import ch3.Exs_ch3_2_user_array_doc;
+
+import d250611.service.UserService_ArrayList_version;
+import d250611.service.UserService_HashMap_version;
 
 public class MemberUi {
     public static void drawUI(Scanner scanner) {
@@ -17,23 +19,29 @@ public class MemberUi {
             scanner.nextLine(); 
             switch (menu) {
                 case 1:
-                    Exs_ch3_2_user_array_doc.addUser(scanner); 
+                    // UserService_ArrayList_version.addUser(scanner); 
+                    UserService_HashMap_version.addUser(scanner);
                     break;
                 case 2:
-                    Exs_ch3_2_user_array_doc.viewUsers(); 
+                    // UserService_ArrayList_version.viewUsers();
+                    UserService_HashMap_version.viewUsers();
                     break;
                 case 3:
-                    Exs_ch3_2_user_array_doc.updateUser(scanner); 
+                    // UserService_ArrayList_version.updateUser(scanner);
+                    UserService_HashMap_version.updateUser(scanner); 
                     break;
                 case 4:
-                    Exs_ch3_2_user_array_doc.deleteUser(scanner); 
+                    // UserService_ArrayList_version.deleteUser(scanner);
+                    UserService_HashMap_version.deleteUser(scanner); 
                     break;
                 case 5:
-                    Exs_ch3_2_user_array_doc.addDummyUsers(); 
+                    // UserService_ArrayList_version.addDummyUsers(); 
+                    UserService_HashMap_version.addDummyUsers();
                     System.out.println("더미 데이터 5개가 추가되었습니다.");
                     break;
                 case 6:
-                    Exs_ch3_2_user_array_doc.searchUser(scanner); 
+                    // UserService_ArrayList_version.searchUser(scanner); 
+                    UserService_HashMap_version.searchUser(scanner); 
                     System.out.println("회원 검색 기능이 실행되었습니다.");
                     break;
                 case 0:
