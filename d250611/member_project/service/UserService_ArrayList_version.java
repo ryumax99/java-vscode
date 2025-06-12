@@ -1,9 +1,9 @@
-package d250611.service;
+package d250611.member_project.service;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import d250611.util.DateUtil;
+import d250611.member_project.util.DateUtil;
 import util.model.Member;
 
 public class UserService_ArrayList_version {

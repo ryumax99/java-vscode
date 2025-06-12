@@ -1,10 +1,26 @@
-package d250611.model;
+package d250612.member_project.model;
 
 public class Member {
     String name;
     String password;
     String email;
     String regDate;
+//====================================================================================
+        // 추가 사항, 회원의 정보 내용을 csv형식으로 문자열 한줄로 반환
+    public String toCSV() {
+        return name + "," + password + "," + email + "," + regDate;
+    }
+        // 한줄의 멤버의 정보를 Member 인스턴스를 생성하는 재료로 사용
+    public static Member fromCSV(String csvLine) {
+        String[] parts = csvLine.split(",",-1);
+        if (parts.length != 4) {
+            return null;
+            
+        }
+        return new Member(parts[0], parts[2], parts[3], parts[4]);
+    }
+
+//====================================================================================
 
     public Member(String name, String password, String email, String regDate) {
         this.name = name;
