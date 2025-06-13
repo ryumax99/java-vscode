@@ -76,12 +76,15 @@ public class _5MemberService {
 
     // 2) 회원 목록을 CSV 파일에 저장
     public void saveMembersToFile() {
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(FILE_NAME))) {
+        try (BufferedWriter bw = new BufferedWriter(
+                new OutputStreamWriter(new FileOutputStream(FILE_NAME), "UTF-8"))) {
             for (Member member : members) {
                 bw.write(member.toCSV());
                 bw.newLine();
             }
-        } catch (Exception e) {
+        } catch (
+
+        Exception e) {
             System.out.println("다른 방법으로 알림등 알려줄 예정");
         }
     }
