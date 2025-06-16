@@ -1,0 +1,6 @@
+{
+    // 프로젝트 루트 기준 lib모두 참조하게 하는 코드
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ]
+}
