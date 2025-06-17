@@ -96,11 +96,11 @@ public class _2JDBC_Select {
                 String password2 = rs.getString("password");
                 String reg_Date = rs.getString("reg_Date");
                 System.out.println("데이터 조회 :");
-                System.out.println("id" + id);
-                System.out.println("name" + name);
-                System.out.println("email" + email);
-                System.out.println("password" + password2);
-                System.out.println("reg_Date" + reg_Date);
+                System.out.println("id : " + id);
+                System.out.println("name : " + name);
+                System.out.println("email : " + email);
+                System.out.println("password : " + password2);
+                System.out.println("reg_Date : " + reg_Date);
             }
 
         } catch (Exception e) {
