@@ -225,9 +225,10 @@ public class _4SignupFrame extends JFrame {
         int member_id;
         if (value instanceof Integer) {
             member_id = ((Integer)value).intValue();
-            System.out.println("선택된 ID 정수화" + member_id);
+            System.out.println("선택된 ID 정수화 : " + member_id);
         }
         member_id = ((Integer)value).intValue();
+        System.out.println("선택된 ID 정수화2 : " + member_id);
         // 유효성 체크
         if (row == -1) {
             JOptionPane.showMessageDialog(this,
@@ -289,8 +290,20 @@ public class _4SignupFrame extends JFrame {
 
             // 0617 회원 수정 변경 후
             // 1) 변경할 데이터를 멤버에 담기
-            // 2) 수정하는 정보 넘기기
+            oldMember.setName(name);
+            oldMember.setEmail(email);
+            oldMember.setPassword(password);
 
+            // 0617 회원 수정 디버깅중
+            System.out.println("수정하기전 데이터 확인 : " + oldMember);
+
+            // oldMember.setRegDate(regDate);
+            // 2) 수정하는 정보 넘기기
+            service.updateMember(oldMember);
+            // 수정한 데이터 반영
+            service.loadMembersFromDB();
+
+            service.refreshTable();
 
         }
     }

@@ -130,6 +130,9 @@ public class _N1OracleMemberDAOImpl implements _9DAO_Interface {
     @Override
     public boolean update(_10Member member) {
         try {
+            // 디버깅 3
+            System.out.println("파일명 _N1OracleMemberDAOImpl");
+            System.out.println();
             conn = _4DBConnectionManager.getConnection();
 
             // 만약 , 자동 인덱스 생성으로 추가 할 경우
@@ -144,7 +147,10 @@ public class _N1OracleMemberDAOImpl implements _9DAO_Interface {
             pstmt.setString(2, member.getPassword());
             pstmt.setString(3, member.getEmail());
             pstmt.setString(4, DateUtil.getCurrentDateTime());
-            pstmt.setInt(5, 1);
+
+            // 수정할 아이디를 1번이 아니라 멤버에게 가져오기
+            // pstmt.setInt(5, 1);
+            pstmt.setInt(5, member.getId());
             
 
             

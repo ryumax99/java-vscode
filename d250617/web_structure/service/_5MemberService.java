@@ -69,6 +69,14 @@ public class _5MemberService {
         return member;
     }
 
+    // 0617 회원 수정 해서 db 반영
+    // 0617 디버깅 2
+    public void updateMember(_10Member member) {
+        System.out.println("회원 수정 파일 데이터 확인");
+        System.out.println(member);
+        dao.update(member);
+    }
+
     // 순서 3
     // 1) 디비에서 회원 목록 불러오기
     public void loadMembersFromDB() {
