@@ -59,8 +59,16 @@ public class _5MemberService {
 
     // 0617 변경후
     public void addMemberDB(_10Member member) {
-             
+        boolean result = dao.insert(member);
+        
     }
+
+    // 0617 회원 수정시 한명의 정보를 가져오는 기능
+    public _10Member getMemberOne(int member_id) {
+        _10Member member = dao.findById(member_id);
+        return member;
+    }
+
     // 순서 3
     // 1) 디비에서 회원 목록 불러오기
     public void loadMembersFromDB() {

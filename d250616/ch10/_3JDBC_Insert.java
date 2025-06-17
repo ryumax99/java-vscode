@@ -47,9 +47,9 @@ public class _3JDBC_Insert {
             // String query = "INSERT INTO MEMBER501 (ID,NAME,PASSWORD,EMAIL,REG_DATE)" +
             // "VALUES(?,?,?,?,?)";
 
-            // 만약 , 자동 인덱스 생성으로 추가 할 경우
-            String query = "INSERT INTO MEMBER501 (ID,NAME,PASSWORD,EMAIL,REG_DATE)" +
-                    "VALUES(MEMBER501_SEQ.NEXTVAL,?,?,?,?)";
+            //변경
+            String query = "UPDATE MEMBER501 SET NAME = ?, EMAIL = ?," +
+             "PASSWORD = ?, REG_DATE = ? WHERE ID = ?";
 
             System.out.println("4. SQL 문 작성 완료");
             // 5. PreparedStatement 생성
