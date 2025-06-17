@@ -13,7 +13,7 @@ public class _3JDBC_Insert {
         // 1. 디비 서버에 접근을 위한 준비물.
         // 1) 드라이버 위치 2) 유저명 3) 패스워드 4) 디비서버의 아이피 및 포트 번호
         String url = "jdbc:oracle:thin:@localhost:1521:xe"; // 디비 서버 아이피, 포트, 서비스 이름
-        String user = "scott"; // 접속할 유저
+        String user = "scott2"; // 접속할 유저
         String password = "tiger"; // 패스워드
         String driver = "oracle.jdbc.driver.OracleDriver"; // 드라이버 위치
 
@@ -91,7 +91,7 @@ public class _3JDBC_Insert {
             System.out.println(result + " 개의 데이터가 저장됨");
 
         } catch (Exception e) {
-            // TODO: handle exception
+            e.printStackTrace();
         } finally {
             // 7. 자원 반납.
             // 객체를 생성한 역순으로 반납.
@@ -107,7 +107,7 @@ public class _3JDBC_Insert {
                 if (conn != null)
                     conn.close();
             } catch (Exception e) {
-                // TODO: handle exception
+                e.printStackTrace();
             }
         }
 

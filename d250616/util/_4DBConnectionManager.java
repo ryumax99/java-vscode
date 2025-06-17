@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 public class _4DBConnectionManager {
     private static final String url = "jdbc:oracle:thin:@localhost:1521:xe"; // 디비 서버 아이피, 포트, 서비스 이름
-    private static final String user = "scott"; // 접속할 유저
+    private static final String user = "scott2"; // 접속할 유저
     private static final String password = "tiger"; // 패스워드
     private static final String driver = "oracle.jdbc.driver.OracleDriver"; // 드라이버 위치
 

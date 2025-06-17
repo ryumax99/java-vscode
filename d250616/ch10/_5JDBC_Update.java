@@ -75,7 +75,7 @@ public class _5JDBC_Update {
             pstmt.setString(2, "1234 수정");
             pstmt.setString(3, "lsy@naver.com 수정");
             pstmt.setString(4, DateUtil.getCurrentDateTime());
-             pstmt.setInt(5, 1);
+            pstmt.setInt(5, 1);
             System.out.println("5. PreparedStatement 생성 완료");
 
             // 6. SQL 문 전송 및 결과값 얻기, 1) 조회 버전: executeQuery,
@@ -91,12 +91,12 @@ public class _5JDBC_Update {
             // 쓰기 버전,
             // int result = pstmt.executeUpdate(query)
             System.out.println("6. 전송 전 완료");
-            int result = pstmt.executeUpdate(query);
+            int result = pstmt.executeUpdate();
             System.out.println("6-2. 전송 후 완료");
             System.out.println(result + " 개의 데이터가 저장됨");
 
         } catch (Exception e) {
-            // TODO: handle exception
+            e.printStackTrace();
         } finally {
             // 7. 자원 반납.
             // 객체를 생성한 역순으로 반납.

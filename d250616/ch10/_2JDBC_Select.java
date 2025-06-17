@@ -104,7 +104,7 @@ public class _2JDBC_Select {
             }
 
         } catch (Exception e) {
-            // TODO: handle exception
+            e.printStackTrace();
         } finally {
             try {
                 if (rs != null)

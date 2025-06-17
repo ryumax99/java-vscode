@@ -22,7 +22,7 @@ public class _1JDBC_Connection_Test1 {
             }
 
         } catch (Exception e) {
-            // TODO: handle exception
+            e.printStackTrace();
         }
     }
     }

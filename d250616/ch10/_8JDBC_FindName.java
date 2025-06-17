@@ -18,7 +18,7 @@ public class _8JDBC_FindName {
             // 변경.
             String query = "SELECT * FROM MEMBER501 WHERE NAME LIKE ?";
             pstmt = conn.prepareStatement(query);
-            String searchKeyword = "이상용";
+            String searchKeyword = "류성원";
             pstmt.setString(1, "%" + searchKeyword + "%");
             rs = pstmt.executeQuery();
             while (rs.next()) {
